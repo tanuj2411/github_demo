@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>forms</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<p>
+		<form>
+			<label for="first_name">First Name:</label>
+			<input id="first_name" type="text" name="first_name" placeholder="john" required >
+			<label for="last_name">Last Name:</label>
+			<input id="last_name" type="text" placeholder="Smith" name="last_name" required>
+			<div>
+				<label for="male">Male</label>
+				<input id="male" type="radio" name="sex" required value="male">
+				<label for="female">Female</label>
+				<input id="female" type="radio" name="sex" required value="female">
+				<label for="other">Other</label>
+				<input id="other" type="radio" name="sex" required value="other">
+			</div>
+			<div>
+				<label for="email">Email:</label>
+				<input type="email" name="email" placeholder="your email" required>
+			
+				<label for="password">Password:</label>
+				<input type="password" name="password" pattern=".{5,10}" placeholder="your password" required title="5 to 10 characters">
+			</div>
+			<div>
+				<label for="Birthday">Birthday:</label>
+				<input type="date" name="date" placeholder="24/11/1998" required value="dates">
+			
+			</div>
+			<div>
+				<label for="terms_agreement">I agree to the terms and conditins</label>
+				<input id="terms_agreement" type="checkbox" name="agreement" required value="agreed">
+			</div>
+			<div>
+				<button>Submit</button>
+			</div>
+
+
+			</div>
+
+
+
+		</form>
+	</p>
+</body>
+</html>
